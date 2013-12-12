@@ -4,9 +4,9 @@
 from trytond.pool import Pool
 from .production import *
 
+
 def register():
     Pool.register(
-        BOM,
         BOMInput,
         BOMOutput,
         module='production_efficiency_percentage', type_='model')
