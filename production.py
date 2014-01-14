@@ -23,10 +23,10 @@ class BOMMixin:
         return 0.0
 
     def on_change_with_efficiency(self):
-        return 1 - self.wastage
+        return None if self.wastage is None else 1 - self.wastage
 
     def on_change_with_wastage(self):
-        return 1 - self.efficiency
+        return None if self.efficiency is None else 1 - self.efficiency
 
 
 class BOMInput(BOMMixin):
