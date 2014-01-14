@@ -4,8 +4,14 @@ this repository contains the full copyright notices and license terms. -->
 <data>
     <xpath expr="/form/field[@name='uom']" position="after">
         <label name="efficiency"/>
-        <field name="efficiency"/>
+        <group col="2" id="efficiency">
+            <field name="efficiency" factor="100" xexpand="0"/>
+            <label name="efficiency" string="%" xalign="0.0" xexpand="1"/>
+        </group>
         <label name="wastage"/>
-        <field name="wastage"/>
+        <group col="2" id="wastage">
+            <field name="wastage" factor="100" xexpand="0"/>
+            <label name="wastage" string="%" xalign="0.0" xexpand="1"/>
+        </group>
     </xpath>
 </data>

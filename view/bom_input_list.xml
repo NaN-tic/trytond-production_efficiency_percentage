@@ -3,7 +3,7 @@
 this repository contains the full copyright notices and license terms. -->
 <data>
     <xpath expr="/tree/field[@name='uom']" position="after">
-        <field name="efficiency"/>
-        <field name="wastage"/>
+        <field name="efficiency" factor="100"/>
+        <field name="wastage" factor="100"/>
     </xpath>
 </data>

@@ -9,9 +9,9 @@ __metaclass__ = PoolMeta
 
 class BOMMixin:
 
-    efficiency = fields.Float('Efficiency', required=True,
+    efficiency = fields.Float('Efficiency', required=True, digits=(16, 4),
         on_change_with=['wastage'])
-    wastage = fields.Float('Wastage', required=True,
+    wastage = fields.Float('Wastage', required=True, digits=(16, 4),
         on_change_with=['efficiency'])
 
     @staticmethod
