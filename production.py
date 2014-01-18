@@ -3,9 +3,19 @@
 from trytond.model import fields
 from trytond.pool import PoolMeta
 
-__all__ = ['BOMInput', 'BOMOutput']
+__all__ = ['BOM', 'BOMInput', 'BOMOutput']
 __metaclass__ = PoolMeta
 
+
+class BOM:
+    __name__ = 'production.bom'
+    def compute_factor(self, product, quantity, uom):
+        res = super(BOM, self).compute_factor(product, quantity, uom)
+        if res:
+            for output in self.outputs:
+                if output.product == product:
+                    return res / output.efficiency if output.efficiency else 0.0
+        return res
 
 class BOMMixin:
 

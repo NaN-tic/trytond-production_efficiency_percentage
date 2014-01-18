@@ -164,10 +164,10 @@ Make a production::
     >>> production.product = product
     >>> production.bom = bom
     >>> production.quantity = 20
-    >>> sorted([i.quantity for i in production.inputs]) == [200, 3000]
+    >>> sorted([i.quantity for i in production.inputs]) == [267, 4000]
     True
     >>> output, = production.outputs
-    >>> output.quantity == 15.0
+    >>> output.quantity == 20.0
     True
     >>> production.save()
     >>> Production.wait([production.id], config.context)
