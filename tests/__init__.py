@@ -1,4 +1,4 @@
 # The COPYRIGHT file at the top level of this repository contains the full
 # copyright notices and license terms.
 
-from .test_production_efficiency_percentage import suite
+from .test_production_efficiency_percentge import suite
