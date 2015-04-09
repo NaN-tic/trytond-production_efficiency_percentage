@@ -28,6 +28,22 @@
             <field name="name">bom_input_list</field>
             <field name="inherit" ref="production.bom_output_view_list"/>
         </record>
+    </data>
+    <data depends="production_process">
+        <record model="ir.ui.view" id="bom_input_view_list_sequence">
+            <field name="model">production.bom.input</field>
+            <field name="type">tree</field>
+            <field name="inherit"
+                ref="production_process.bom_input_view_list_sequence"/>
+            <field name="name">bom_input_list</field>
+        </record>
 
+        <record model="ir.ui.view" id="bom_output_view_list_sequence">
+            <field name="model">production.bom.output</field>
+            <field name="type">tree</field>
+            <field name="inherit"
+                ref="production_process.bom_output_view_list_sequence"/>
+            <field name="name">bom_input_list</field>
+        </record>
     </data>
 </tryton>
