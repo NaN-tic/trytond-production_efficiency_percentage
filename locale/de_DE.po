@@ -1,0 +1,27 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:production.bom.input,efficiency:"
+msgid "Efficiency"
+msgstr "Effektivität"
+
+msgctxt "field:production.bom.input,wastage:"
+msgid "Wastage"
+msgstr "Verlust"
+
+msgctxt "field:production.bom.output,efficiency:"
+msgid "Efficiency"
+msgstr "Effektivität"
+
+msgctxt "field:production.bom.output,wastage:"
+msgid "Wastage"
+msgstr "Verlust"
+
+msgctxt "view:production.bom.input:"
+msgid "%"
+msgstr "%"
+
+msgctxt "view:production.bom.output:"
+msgid "%"
+msgstr "%"
