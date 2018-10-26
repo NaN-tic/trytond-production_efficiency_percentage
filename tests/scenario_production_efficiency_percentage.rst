@@ -124,7 +124,7 @@ Create an Inventory::
     >>> inventory.save()
     >>> Inventory.confirm([inventory.id], config.context)
     >>> inventory.state
-    u'done'
+    'done'
 
 Make a production::
 
@@ -141,4 +141,4 @@ Make a production::
     >>> production.save()
     >>> Production.wait([production.id], config.context)
     >>> production.state
-    u'waiting'
+    'waiting'

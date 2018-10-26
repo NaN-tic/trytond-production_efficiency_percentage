@@ -4,10 +4,9 @@ from trytond.model import fields
 from trytond.pool import PoolMeta
 
 __all__ = ['BOM', 'BOMInput', 'BOMOutput']
-__metaclass__ = PoolMeta
 
 
-class BOM:
+class BOM(metaclass=PoolMeta):
     __name__ = 'production.bom'
 
     def compute_factor(self, product, quantity, uom):
@@ -20,7 +19,7 @@ class BOM:
         return res
 
 
-class BOMMixin:
+class BOMMixin(metaclass=PoolMeta):
     efficiency = fields.Float('Efficiency', required=True, digits=(16, 4))
     wastage = fields.Float('Wastage', required=True, digits=(16, 4))
 
