@@ -44,12 +44,19 @@ class BOMInput(BOMMixin):
     __name__ = 'production.bom.input'
 
     def compute_quantity(self, factor):
-        return super(BOMInput, self).compute_quantity(factor / self.efficiency)
+        if factor:
+            value = factor / self.efficiency
+        else:
+            value = factor
+        return super(BOMInput, self).compute_quantity(value)
 
 
 class BOMOutput(BOMMixin):
     __name__ = 'production.bom.output'
 
     def compute_quantity(self, factor):
-        return super(BOMOutput, self).compute_quantity(factor *
-            self.efficiency)
+        if factor:
+            value = factor * self.efficiency
+        else:
+            value = factor
+        return super(BOMOutput, self).compute_quantity(value)
