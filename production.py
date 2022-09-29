@@ -44,7 +44,7 @@ class BOMInput(BOMMixin):
     __name__ = 'production.bom.input'
 
     def compute_quantity(self, factor):
-        if factor:
+        if factor and self.efficiency and self.efficiency > 0:
             value = factor / self.efficiency
         else:
             value = factor
