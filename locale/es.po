@@ -8,7 +8,7 @@ msgstr "Eficiencia"
 
 msgctxt "field:production.bom.input,wastage:"
 msgid "Wastage"
-msgstr "Pèrdida"
+msgstr "Pérdida"
 
 msgctxt "field:production.bom.output,efficiency:"
 msgid "Efficiency"
@@ -16,7 +16,7 @@ msgstr "Eficiencia"
 
 msgctxt "field:production.bom.output,wastage:"
 msgid "Wastage"
-msgstr "Pèrdida"
+msgstr "Pérdida"
 
 msgctxt "view:production.bom.input:"
 msgid "%"
