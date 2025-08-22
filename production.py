@@ -3,15 +3,13 @@
 from trytond.model import fields
 from trytond.pool import PoolMeta
 
-__all__ = ['BOM', 'BOMInput', 'BOMOutput']
-
 
 class BOM(metaclass=PoolMeta):
     __name__ = 'production.bom'
 
-    def compute_factor(self, product, quantity, uom):
-        res = super(BOM, self).compute_factor(product, quantity, uom)
-        if res:
+    def compute_factor(self, product, quantity, uom, type='outputs'):
+        res = super().compute_factor(product, quantity, uom, type)
+        if type == 'outputs':
             for output in self.outputs:
                 if output.product == product:
                     return res / (output.efficiency if output.efficiency
