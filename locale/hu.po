@@ -1,0 +1,32 @@
+#
+msgid ""
+msgstr ""
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "field:production.bom.input,efficiency:"
+msgid "Efficiency"
+msgstr "Hatékonyság"
+
+msgctxt "field:production.bom.input,wastage:"
+msgid "Wastage"
+msgstr "Veszteség"
+
+msgctxt "field:production.bom.output,efficiency:"
+msgid "Efficiency"
+msgstr "Hatékonyság"
+
+msgctxt "field:production.bom.output,wastage:"
+msgid "Wastage"
+msgstr "Veszteség"
+
+msgctxt "view:production.bom.input:"
+msgid "%"
+msgstr "%"
+
+msgctxt "view:production.bom.output:"
+msgid "%"
+msgstr "%"
